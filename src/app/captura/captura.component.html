@@ -1,0 +1,301 @@
+
+
+
+<div class="row">
+
+ <div class="page-header" style="text-align: center;">
+    <strong><h3 class="header-text text-info">Datos </h3> - <h3 class="header-text text-muted">Paciente</h3></strong>
+</div>
+
+    <div class="col-lg-8">
+        <div class="panel panel-white">
+            <div class="panel-heading">
+                <h3 class="panel-title">Título</h3>
+                <div class="panel-tools">
+                    <a class="tools-action" href="#" data-toggle="collapse">
+                        <i class="pe-7s-angle-up"></i>
+                    </a>
+                    <a class="tools-action" href="#" data-toggle="dispose">
+                        <i class="pe-7s-close"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="panel-body">
+                <form id="form" name="form">
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Nombres">Nombres</label>
+                            <input type="text" class="form-control" id="Nombres" placeholder="Nombre(s)" [(ngModel)]="nombre" name="nombre">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+<div class="space">
+                    <div class="col-lg-6">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Primerapellido">Primer apellido</label>
+                            <input type="text" class="form-control" id="Primerapellido" placeholder="Primer apellido" [(ngModel)]="ape_paterno" name="ape_paterno">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="prepend-icon ">
+                            <label class="sr-only" for="Segundoapellido">Segundo apellido</label>
+                            <input type="text" class="form-control" id="Segundoapellido" placeholder="Segundo apellido" [(ngModel)]="ape_materno" name="ape_materno">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Nacimiento">Edad</label>
+                            <input type="number" class="form-control" id="Edad" placeholder="Edad" name="edad">
+                            <i class="glyphicon glyphicon-time"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Nacimiento">Nacimiento</label>
+                            <input type="text" class="form-control" id="Nacimiento" placeholder="Nacimiento" [(ngModel)]="fecha_nac" name="fecha_nac">
+                            <i class="glyphicon glyphicon-calendar"></i>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Sexo">Sexo</label>
+                            <select class="form-control" [(ngModel)]="sexo" name="sexo">
+                                <option>Seleccione Sexo</option>
+                                <option>Femenino</option>
+                                <option>Masculino</option>
+                            </select>
+                            
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Curp">Curp</label>
+                            <input type="text" class="form-control" id="Curp" placeholder="Curp" [(ngModel)]="telefono" name="telefono">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="UnidadPrimerNivel">Unidad Primer Nivel</label>
+                            <select class="form-control" name="uni_primer_nivel">
+                                <option>Seleccione Unidad</option>
+                                <option>Centro de Salud Zaragoza - Insurgentes</option>
+                                <option>Centro de Salud Analco</option>
+                            </select>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Calle">Calle</label>
+                            <input type="text" class="form-control" id="Calle" placeholder="Calle" name="calle_uni">
+                            <i class="glyphicon glyphicon-road"></i>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Medico">Médico</label>
+                            <input type="text" class="form-control" id="Medico" placeholder="Médico" name="medico">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="UnidadHospitalizacion">Unidad Hospitalización</label>
+                            <input type="text" class="form-control" id="UnidadHospitalizacion" placeholder="Unidad Hospitalización" name="uni_hospital">
+                            <i class="glyphicon glyphicon-home"></i>
+                        </div>
+                    </div>
+</div>
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="UnidadHospitalizacion">Indigena</label>
+                            <input type="text" class="form-control" id="indigena" placeholder="Indigena" name="indigena">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+
+
+
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="UnidadHospitalizacion">Folio Seguro Popular</label>
+                            <input type="text" class="form-control" id="discapacidad" placeholder="Seguro Polular" name="nsp">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+
+
+<div class="space">
+                    <div class="col-lg-12">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="UnidadHospitalizacion">Folio Prospera</label>
+                            <input type="text" class="form-control" id="discapacidad" placeholder="Folio Prospera" name="folio_prospera">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </div>
+                    </div>
+</div>
+
+
+<div class="space">
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Nacimiento">ISSSTE/ISSTEP</label>
+                            <input type="text" class="form-control" id="Edad" placeholder="ISSSTE/ISSTEP" name="isste">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Nacimiento">IMSS</label>
+                            <input type="text" class="form-control" id="Nacimiento" placeholder="IMSS" name="imss">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="prepend-icon">
+                            <label class="sr-only" for="Sexo">SEDENA</label>
+                            <input type="text" class="form-control" id="Nacimiento" placeholder="Sedena" name="sedena">
+                            
+                        </div>
+                    </div>
+</div>
+
+
+
+
+         <button type="submit" class="btn btn-primary" name="guardar" (click)="guardar()">Guardar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-white">
+<br>
+
+
+
+<img src="assets\img\profile\profile-cover.jpg" class="img-circle center-block" width="180" height="180">  
+
+
+            <div class="panel-body">
+
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="Direccion" class="col-sm-12">Dirección</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="Calle" class="col-sm-12">Calle</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Calle" placeholder="Calle" name="calle">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Colonia" class="col-sm-12">Colonia</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Colonia" placeholder="Colonia" name="colonia">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Localidad" class="col-sm-12">Localidad</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Localidad" placeholder="Localidad" name="localidad">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Estado" class="col-sm-12">Estado</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Estado" placeholder="Estado" name="estado">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="Telefono" class="col-sm-12">Teléfono</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Telefono" placeholder="Teléfono" name="telefono">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Correo" class="col-sm-12">Email</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Correo" placeholder="Correo electrónico" name="correo">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Contacto" class="col-sm-12">Contacto</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Contacto" placeholder="Contacto" name="contacto">
+                        </div>
+                    </div>
+
+                                        <div class="form-group">
+                        <label for="Expediente" class="col-sm-12">No. Expediente</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Expediente" placeholder="Expediente" name="no_expediente">
+                        </div>
+                    </div>
+
+                                        <div class="form-group">
+                        <label for="Social" class="col-sm-12">No. Social</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Correo" placeholder="Social" name="correo">
+                        </div>
+                    </div>
+
+                                        <div class="form-group">
+                        <label for="Tipo" class="col-sm-12">Tipo de Seguro Social</label>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" id="Tipo" placeholder="Tipo de Seguro Social" name="tipo_ss">
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="col-lg-12">
+        <div class="panel panel-white">
+            <div class="panel-body col-lg-offset-3">
+
+                    <div class="form-group col-lg-6">
+                        <label class="sr-only" for="Fechaalta">Fecha de alta</label>
+                        <input type="text" class="form-control" id="Fechaalta" placeholder="Fecha de alta" name="fecha_alta">
+                    </div>
+            </div>
+        </div>
+    </div>
+   
