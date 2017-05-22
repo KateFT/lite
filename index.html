@@ -1,0 +1,116 @@
+ <!DOCTYPE html>
+<!--
+[HTML MarkUp Structure]
+
+Project:	Yima Admin App
+Version:	1.0.0
+Last change:	12/12/15 [Changelog: (http://www.IssatisLab.com)]
+Implemented By:	IssatisLab (http://www.IssatisLab.com)
+
+
+[Table of contents]
+
+1. Meta Tags
+2. Css References
+3. Sidebar Menu
+4. Sidebar Form
+5. Main Page Content
+    5.1. Page Header
+        5.1.1. BreadCrumb
+        5.1.2. Header Buttons
+    5.2. Page Navbar
+    5.3. Page Body
+6. JavaScript References
+7. Page Related Scripts
+-->
+
+<html lang="en">
+<head>
+<base href="/ece/">
+<style type="text/css">
+	 .dataTables_info{
+            display: none!important;
+        }
+
+        #search-textbox-table tr td {
+            padding: 2px!important;
+        }
+
+       #search-textbox-table_length,#search-textbox-table_paginate{/*  ,*/
+             display: none!important;
+        }
+        #footert,#headt{
+             display: none!important;
+
+        }
+        #search-textbox-table_filter {
+            
+        }
+
+        #search-textbox-table tbody tr{
+            height: 32px!important;||
+        }
+        div.checkbox{
+            padding-top: 0px!important;
+        }
+        .table>tbody>tr>td, .table>tbody>tr>th{
+             height: 32px!important;
+        }
+        
+</style>
+
+
+    <!--
+    [1. Meta Tags]
+    -->
+    <meta charset="utf-8" />
+    <title>ECE Lite</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <!--
+    [2. Css References]
+    -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" id="link-bootstrap" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/app.min.css" type="text/css" id="link-app" />
+    <link rel="stylesheet" href="assets/css/demo.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/pe-icon-7-stroke.css" type="text/css" />
+    
+<link href="styles.d41d8cd98f00b204e980.bundle.css" rel="stylesheet"/></head>
+<body>
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 100%!important;"><div class="content-body" style="overflow: hidden; width: 100%; height: 100%!important;">
+ 	<div class="content-body">
+            <app-root></app-root>            
+	</div>
+	</div>
+	<script>
+	  if ('serviceWorker' in navigator) {
+	    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+	      console.log('Service Worker registered');
+	    }).catch(function(err) {
+	      console.log('Service Worker registration failed: ', err);
+	    });
+	  }
+	</script>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/modernizr.custom.js"></script>
+        <script src="assets/js/lib/slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/js/lib/animsition/animsition.min.js"></script>
+        <script src="assets/js/main.js"></script>
+		<script src="assets/js/lib/datatables/jquery.dataTables.min.js"></script>
+		<script src="assets/js/lib/datatables/dataTables.bootstrap.min.js"></script>
+		<script src="assets/js/pages/datatables-search.js"></script>
+        
+
+
+       <!-- <script src="assets/js/ServiceWorker.js"></script> -->
+
+
+		
+
+</html>
+<script type="text/javascript" src="inline.13f0c85f08bb96cc1b29.bundle.js"></script><script type="text/javascript" src="polyfills.9c58aa600a14eb47d622.bundle.js"></script><script type="text/javascript" src="main.670d4acbbccfd6c08ef7.bundle.js"></script>
