@@ -1,4 +1,5 @@
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+//import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AfoListObservable, AngularFireOfflineDatabase } from 'angularfire2-offline/database';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,12 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListaDiariaComponent {
 
-	items: FirebaseListObservable<any[]>;
-  	constructor(db: AngularFire) {
-    this.items = db.database.list('/pacientes');
-    console.log("Paso Firebase");
-    console.log(this.items);
-  }
+	  items: AfoListObservable<any[]>;
+    constructor(private db: AngularFireOfflineDatabase) {
+    this.items = this.db.list('/pacientes');
+}
 
  
 }

@@ -1,4 +1,4 @@
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { AfoListObservable, AngularFireOfflineDatabase } from 'angularfire2-offline/database';
 import { Component, OnInit } from '@angular/core';
 
 export interface IPaciente{
@@ -33,11 +33,11 @@ export class CapturaComponent {
 	correo: string;
 	activo:string;
 	
- 	items: FirebaseListObservable<any[]>;
-  	constructor(db: AngularFire) {
-    this.items = db.database.list('/pacientes');
-    console.log("Paso Firebase");
-    console.log(this.items);
+ 
+  items: AfoListObservable<any[]>;
+    constructor(private db: AngularFireOfflineDatabase) {
+    this.items = this.db.list('/pacientes');
+
   }
 
   guardar() {
@@ -54,7 +54,25 @@ export class CapturaComponent {
   	//console.log("entro a guardarxs  "+ this.paciente);
 
   	this.items.push(this.paciente);
+    this.nombre="";
+    this.ape_paterno="";
+    this.ape_materno="";
   }
-  
- 
+
+ /*  borrarTodo() {
+    this.items.remove();
+  }
+
+
+ borrarItem(nombre: string) {
+    this.items.remove(nombre);
+  }
+
+   prioritize(item) {
+    this.items.update(item.$nombre, { text: item.text + '' });
+  }
+
+  reset() {
+    this.items.remove();
+  }*/
 }

@@ -12,7 +12,8 @@ import { ListaDiariaComponent } from './lista-diaria/lista-diaria.component';
 import { CapturaComponent } from './captura/captura.component';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environments/firebase.config';
-
+import { AngularFireOfflineModule } from 'angularfire2-offline';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,9 @@ import { firebaseConfig } from '../environments/firebase.config';
     BrowserModule,
     FormsModule,
     HttpModule,
-    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireOfflineModule,
+    AngularFireModule.initializeApp(firebaseConfig.firebase),
     RouterModule.forRoot([
             {
                 path: 'nota-medica',

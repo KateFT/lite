@@ -1,4 +1,3 @@
-import { AngularFire, FirebaseListObservable } from 'angularfire2';
 import { Component } from '@angular/core';
 
 @Component({
