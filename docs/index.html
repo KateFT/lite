@@ -72,7 +72,7 @@ Pagina de inicio de ECE
     console.log("Pasando por Service Workers");
 
       if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+        navigator.serviceWorker.register('/lite/service-worker.js').then(function(registration) {
           console.log('Service Worker Registered');
         }).catch(function(err) {
           console.log('Service Worker registration failed: ', err);
