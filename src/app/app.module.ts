@@ -10,6 +10,7 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { HojaIndividualComponent } from './hoja-individual/hoja-individual.component';
 import { ListaDiariaComponent } from './lista-diaria/lista-diaria.component';
 import { CapturaComponent } from './captura/captura.component';
+import { SHELL_ROUTES } from './routes';
 import { AngularFireModule } from 'angularfire2';
 import { firebaseConfig } from '../environments/firebase.config';
 import { AngularFireOfflineModule } from 'angularfire2-offline';
@@ -33,32 +34,7 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     AngularFireDatabaseModule,
     AngularFireOfflineModule,
     AngularFireModule.initializeApp(firebaseConfig.firebase),
-    RouterModule.forRoot([
-            {
-                path: 'nota-medica',
-                component: NotaMedicaComponent
-            },
-            {
-                path: 'hoja-individual',
-                component: HojaIndividualComponent
-            },
-            { 
-                path: 'hoja-familiar', 
-                component: HojaFamiliaComponent 
-            },
-            {   path: 'agenda', 
-                component: AgendaComponent
-            },
-            {
-                path: 'captura',
-                component: CapturaComponent
-            },
-            {
-                path: 'lista-diaria',
-                component: ListaDiariaComponent
-            },
-
-        ])
+    RouterModule.forRoot(SHELL_ROUTES)
   ],
   providers: [],
   bootstrap: [AppComponent]

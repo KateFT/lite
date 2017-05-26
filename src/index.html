@@ -43,9 +43,6 @@ Implemented By:	IssatisLab (http://www.IssatisLab.com)
              display: none!important;
 
         }
-        #search-textbox-table_filter {
-            
-        }
 
         #search-textbox-table tbody tr{
             height: 32px!important;||
@@ -81,35 +78,37 @@ Implemented By:	IssatisLab (http://www.IssatisLab.com)
     
 </head>
 <body>
-<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 100%!important;"><div class="content-body" style="overflow: hidden; width: 100%; height: 100%!important;">
+
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: 100%!important;">
+
+<div class="content-body" style="overflow: hidden; width: 100%; height: 100%!important;">
  	<div class="content-body">
             <app-root></app-root>            
 	</div>
-	</div>
-	<script>
-	  if ('serviceWorker' in navigator) {
-	    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
-	      console.log('Service Worker registered');
-	    }).catch(function(err) {
-	      console.log('Service Worker registration failed: ', err);
-	    });
-	  }
-	</script>
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/modernizr.custom.js"></script>
-        <script src="assets/js/lib/slimscroll/jquery.slimscroll.min.js"></script>
-        <script src="assets/js/lib/animsition/animsition.min.js"></script>
-        <script src="assets/js/main.js"></script>
-		<script src="assets/js/lib/datatables/jquery.dataTables.min.js"></script>
-		<script src="assets/js/lib/datatables/dataTables.bootstrap.min.js"></script>
-		<script src="assets/js/pages/datatables-search.js"></script>
-        
+</div>
 
 
-       <!-- <script src="assets/js/ServiceWorker.js"></script> -->
+</div>
+    <script>
+    console.log("Pasando por Service Workers");
 
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          console.log('Service Worker Registered');
+        }).catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+        });
+      }
+    </script>
 
-		
-
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script src="assets/js/modernizr.custom.js"></script>  
+            <script src="assets/js/lib/slimscroll/jquery.slimscroll.min.js"></script>
+            <script src="assets/js/lib/animsition/animsition.min.js"></script>  
+            <script src="assets/js/main.js"></script>
+            <script src="assets/js/lib/datatables/jquery.dataTables.min.js"></script>
+            <script src="assets/js/lib/datatables/dataTables.bootstrap.min.js"></script>
+            <script src="assets/js/pages/datatables-search.js"></script>
+   <!--   <script src="assets/js/ServiceWorker.js"></script> -->
 </html>
